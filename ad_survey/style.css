@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Malgun Gothic', sans-serif;
+  background-color: #000;
+  user-select: none;
+}
+
+#ad-container {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  background-image: url('backimage.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.survey-box {
+  width: 280px;
+  background-color: rgba(0, 0, 0, 0.85); 
+  padding: 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+.question {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.option-btn {
+  width: 100%;
+  background-color: #313131;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 10px;
+  font-size: 12px;
+  text-align: left;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.option-btn:hover {
+  background-color: #444;
+}
+
+.skip-btn {
+  background-color: #000;
+  margin-top: 4px;
+  border: 1px solid #333;
+  color: #bbb;
+}
+
+.skip-btn i {
+  font-size: 14px;
+}

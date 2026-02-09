@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    var clickTag = "https://www.google.com"; 
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <div id="ad-container">
+    <div class="survey-box">
+      
+      <div class="step active" id="step1">
+        <p class="question">1. 지금 찾고 있는 2차 장소는?</p>
+        <div class="options">
+          <button class="option-btn" onclick="nextStep(2)">카페</button>
+          <button class="option-btn" onclick="nextStep(2)">술집</button>
+          <button class="option-btn skip-btn" onclick="finishSurvey()">
+            설문조사 건너뛰기 <i class="fa-solid fa-forward-step"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="step" id="step2">
+        <p class="question">2. 인원/구성</p>
+        <div class="options">
+          <button class="option-btn" onclick="nextStep(3)">2명</button>
+          <button class="option-btn" onclick="nextStep(3)">3~4명</button>
+          <button class="option-btn" onclick="nextStep(3)">5명 이상</button>
+          <button class="option-btn skip-btn" onclick="finishSurvey()">
+            설문조사 건너뛰기 <i class="fa-solid fa-forward-step"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="step" id="step3">
+        <p class="question">3. 이동 범위는 어느 정도가 좋아요?</p>
+        <div class="options">
+          <button class="option-btn" onclick="nextStep(4)">최대한 가까운 곳 (도보 3~5분)</button>
+          <button class="option-btn" onclick="nextStep(4)">조금 걸어도 괜찮아 (도보 10분 이내)</button>
+          <button class="option-btn skip-btn" onclick="finishSurvey()">
+            설문조사 건너뛰기 <i class="fa-solid fa-forward-step"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="step" id="step4">
+        <p class="question">4. 가게 고를 때 중요한 옵션은?</p>
+        <div class="options">
+          <button class="option-btn" onclick="finishSurvey()">편안한곳 (조용, 대화하기 좋은곳)</button>
+          <button class="option-btn" onclick="finishSurvey()">맛있는곳 (음료, 안주 맛있는곳)</button>
+          <button class="option-btn skip-btn" onclick="finishSurvey()">
+            설문조사 건너뛰기 <i class="fa-solid fa-forward-step"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
