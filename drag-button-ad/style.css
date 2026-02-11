@@ -1,5 +1,12 @@
 body {
   margin: 0; /*바깥쪽 여백*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Malgun Gothic', sans-serif;
+  background-color: #000;
+  user-select: none;
 }
 
 
