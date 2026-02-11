@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script> var clickTag = "https://www.google.com"; </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div id="ad-container">
+    <div class="dynamic-bg">
+      <div id="bg-left" class="bg-segment"></div>
+      <div id="bg-center" class="bg-segment"></div>
+      <div id="bg-right" class="bg-segment"></div>
+      <div class="bg-overlay"></div>
+    </div>
+
+    <div class="carousel-stage">
+      <div class="carousel-item left" id="item-0">
+        <img src="2.png" alt="">
+      </div>
+      <div class="carousel-item center" id="item-1">
+        <img src="1.png" alt="">
+      </div>
+      <div class="carousel-item right" id="item-2">
+        <img src="1.png" alt="">
+      </div>
+    </div>
+
+    <button class="nav-btn next" onclick="rotateNext()">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
