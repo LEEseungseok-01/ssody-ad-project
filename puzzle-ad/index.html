@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>퍼즐 맞추기 광고</title>
+  <script> var clickTag = "https://www.google.com"; </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="ad-container">
+    <div id="feedback"></div>
+
+    <div class="header">
+      <h1 class="title">퍼즐 맞추기 이벤트</h1>
+      <p class="subtitle">잃어버린 <span>한조각</span>을 찾아보자</p>
+    </div>
+
+    <div class="main-wrapper">
+      <div id="puzzle-board-container">
+        <div id="puzzle-board">
+          <div class="piece fixed p-edge-top-left"></div>
+          <div class="piece fixed p-edge-top"></div>
+          <div class="piece fixed p-edge-top-right"></div>
+          <div class="piece fixed p-edge-left"></div>
+          <div id="drop-zone" class="piece empty">?</div>
+          <div class="piece fixed p-edge-right"></div>
+          <div class="piece fixed p-edge-bottom-left"></div>
+          <div class="piece fixed p-edge-bottom"></div>
+          <div class="piece fixed p-edge-bottom-right"></div>
+        </div>
+      </div>
+
+      <div id="options-side">
+        <div class="option-row">
+          <span class="badge">1</span>
+          <div class="piece draggable wrong p-sample-1" draggable="true" id="wrong-1"></div>
+        </div>
+        <div class="option-row">
+          <span class="badge">2</span>
+          <div class="piece draggable correct p-sample-correct" draggable="true" id="correct-answer"></div>
+        </div>
+        <div class="option-row">
+          <span class="badge">3</span>
+          <div class="piece draggable wrong p-sample-2" draggable="true" id="wrong-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
